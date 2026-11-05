@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<meta name="robots" content="index, follow">
+<title>《灰区撤离》隐私政策</title>
+<meta name="description" content="《灰区撤离》（com.codex.grayzone.optimized）隐私政策：本游戏为完全离线的单机游戏，不收集任何个人信息，未申请网络访问权限，未接入任何第三方 SDK。">
+<style>
+  :root{
+    --bg:#f5f6f8;
+    --paper:#ffffff;
+    --ink:#1b2130;
+    --ink-soft:#4a5468;
+    --ink-mute:#7b869b;
+    --line:#e4e8ef;
+    --brand:#2f5bd7;
+    --brand-soft:#eef2fd;
+    --ok:#1f8a5b;
+    --ok-soft:#e8f6ef;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;-webkit-text-size-adjust:100%}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 520px at 50% -240px, #dfe7fb 0%, rgba(223,231,251,0) 70%),
+      var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC","Noto Sans CJK SC",sans-serif;
+    font-size:16px;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:40px 20px 72px}
+
+  /* ---------- 头部 ---------- */
+  header.hero{
+    background:linear-gradient(135deg,#111a2e 0%,#1d2c50 52%,#2a3f73 100%);
+    color:#fff;
+    border-radius:22px;
+    padding:38px 34px 32px;
+    box-shadow:0 18px 44px -20px rgba(17,26,46,.55);
+    position:relative;
+    overflow:hidden;
+  }
+  header.hero::after{
+    content:"";
+    position:absolute;inset:auto -60px -120px auto;
+    width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%,rgba(120,160,255,.45),rgba(120,160,255,0) 68%);
+  }
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:#a8bcf0;margin:0 0 14px;font-weight:600;
+  }
+  .kicker .dot{width:6px;height:6px;border-radius:50%;background:#5b86ff;box-shadow:0 0 0 4px rgba(91,134,255,.22)}
+  h1{
+    margin:0;font-size:clamp(25px,4.4vw,35px);line-height:1.32;
+    font-weight:750;letter-spacing:-.01em;
+  }
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .chip{
+    display:inline-flex;align-items:center;gap:6px;
+    background:rgba(255,255,255,.11);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:999px;padding:5px 13px;font-size:13px;color:#dfe6f8;
+    backdrop-filter:blur(4px);
+  }
+  .chip b{color:#fff;font-weight:650}
+
+  /* ---------- 摘要卡 ---------- */
+  .summary{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+    margin:18px 0 0;
+  }
+  .summary div{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 16px 14px;box-shadow:0 1px 2px rgba(19,29,54,.04);
+  }
+  .summary .ico{font-size:17px;line-height:1;margin-bottom:8px;display:block}
+  .summary .t{font-size:13.5px;font-weight:700;color:var(--ink);display:block}
+  .summary .d{font-size:12.5px;color:var(--ink-mute);line-height:1.6;margin-top:3px;display:block}
+
+  /* ---------- 目录 ---------- */
+  nav.toc{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 22px;margin:18px 0 26px;box-shadow:0 1px 2px rgba(19,29,54,.04);
+  }
+  nav.toc h2{
+    font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-mute);margin:0 0 12px;font-weight:700;
+  }
+  nav.toc ol{
+    margin:0;padding:0;list-style:none;
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 22px;
+    counter-reset:toc;
+  }
+  nav.toc li{counter-increment:toc}
+  nav.toc a{
+    color:var(--ink-soft);text-decoration:none;font-size:14.5px;
+    border-bottom:0;
+    display:flex;gap:9px;padding:5px 6px;border-radius:8px;transition:.16s;
+  }
+  nav.toc a::before{
+    content:counter(toc,decimal-leading-zero);
+    color:var(--ink-mute);font-size:12px;font-variant-numeric:tabular-nums;
+    padding-top:3px;min-width:18px;
+  }
+  nav.toc a:hover{background:var(--brand-soft);color:var(--brand)}
+
+  /* ---------- 正文 ---------- */
+  article{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:8px 34px 34px;box-shadow:0 1px 2px rgba(19,29,54,.04);
+  }
+  section{padding-top:26px;border-top:1px solid var(--line)}
+  section:first-of-type{border-top:0}
+  h2{
+    font-size:19px;line-height:1.5;margin:0 0 14px;font-weight:720;
+    letter-spacing:-.005em;color:var(--ink);scroll-margin-top:20px;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  h2 .num{
+    flex:0 0 auto;color:var(--brand);font-size:13px;font-weight:750;
+    font-variant-numeric:tabular-nums;letter-spacing:.06em;
+    background:var(--brand-soft);border-radius:7px;padding:2px 8px;
+    position:relative;top:-2px;
+  }
+  p{margin:0 0 13px;color:var(--ink-soft)}
+  article > p, section > p:first-of-type{color:var(--ink-soft)}
+  strong{color:var(--ink);font-weight:680}
+  ul,ol{margin:0 0 14px;padding-left:1.35em;color:var(--ink-soft)}
+  li{margin:5px 0}
+  li::marker{color:var(--ink-mute)}
+  code{
+    font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+    font-size:.875em;background:#f1f4f9;border:1px solid #e3e8f1;
+    border-radius:6px;padding:1.5px 6px;color:#2b3a56;white-space:nowrap;
+  }
+  a{color:var(--brand);text-decoration:none;border-bottom:1px solid rgba(47,91,215,.28)}
+  a:hover{border-bottom-color:var(--brand)}
+  hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+
+  /* 高亮语义块 */
+  .callout{
+    border-radius:12px;padding:14px 18px;margin:0 0 16px;
+    border:1px solid #cfe6da;background:var(--ok-soft);
+    color:#14603f;font-weight:650;font-size:15.5px;
+  }
+  .callout.info{border-color:#d5e0f8;background:var(--brand-soft);color:#2a4aa8;font-weight:600}
+
+  /* 表格 */
+  .table-scroll{overflow-x:auto;margin:0 0 16px;border:1px solid var(--line);border-radius:12px;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:420px}
+  thead th{
+    background:#f7f9fc;text-align:left;font-weight:700;color:var(--ink);
+    padding:11px 16px;border-bottom:1px solid var(--line);white-space:nowrap;
+  }
+  tbody td{padding:11px 16px;border-bottom:1px solid #eef1f6;color:var(--ink-soft);vertical-align:top}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:#fafbfe}
+
+  /* 联系卡 */
+  .contact{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:10px;margin:6px 0 16px;
+  }
+  .contact a, .contact span{
+    display:flex;align-items:center;gap:10px;
+    background:#f7f9fc;border:1px solid var(--line);border-radius:11px;
+    padding:11px 15px;font-size:14.5px;color:var(--ink-soft);
+  }
+  .contact a{border-bottom:1px solid var(--line)}
+  .contact a:hover{background:var(--brand-soft);border-color:#d5e0f8;color:var(--brand)}
+  .contact .k{color:var(--ink-mute);font-size:12.5px;min-width:34px}
+
+  footer.page{
+    text-align:center;color:var(--ink-mute);font-size:12.5px;
+    margin-top:26px;line-height:1.9;
+  }
+  footer.page .sep{margin:0 7px;opacity:.5}
+
+  @media (max-width:720px){
+    .wrap{padding:18px 12px 48px}
+    header.hero{padding:30px 22px 26px;border-radius:18px}
+    article{padding:4px 20px 24px;border-radius:14px}
+    nav.toc{padding:16px 18px}
+    nav.toc ol{grid-template-columns:1fr}
+    .summary{grid-template-columns:1fr;gap:8px}
+    .summary div{display:flex;align-items:flex-start;gap:11px;padding:13px 15px}
+    .summary .ico{margin:1px 0 0}
+    .summary .t{margin-top:0}
+  }
+  @media print{
+    body{background:#fff;font-size:11.5pt}
+    .wrap{max-width:none;padding:0}
+    header.hero{background:#fff;color:#000;box-shadow:none;border:0;border-bottom:2px solid #000;border-radius:0;padding:0 0 14px}
+    header.hero .kicker,.meta,.summary,nav.toc{display:none}
+    h1{font-size:20pt}
+    article{border:0;box-shadow:none;padding:0}
+    section{page-break-inside:avoid;border-top:1px solid #ddd}
+    a{color:#000;border:0}
+    .callout{background:#fff;border:1px solid #999}
+    thead th{background:#eee}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="kicker"><span class="dot"></span>Privacy Policy</p>
+    <h1>《灰区撤离》隐私政策</h1>
+    <div class="meta">
+      <span class="chip">生效日期 <b>2026 年 11 月 4 日</b></span>
+      <span class="chip">最近更新 <b>2026 年 11 月 4 日</b></span>
+      <span class="chip"><b>com.codex.grayzone.optimized</b></span>
+    </div>
+  </header>
+
+  <div class="summary">
+    <div><span class="ico">🛡️</span><span class="t">零个人信息收集</span><span class="d">不收集姓名、手机号、设备标识等任何信息</span></div>
+    <div><span class="ico">📴</span><span class="t">无网络权限</span><span class="d">未申请 INTERNET 权限，技术上无法上传数据</span></div>
+    <div><span class="ico">📦</span><span class="t">零第三方 SDK</span><span class="d">无广告、统计、推送、崩溃上报等 SDK</span></div>
+  </div>
+
+  <nav class="toc" aria-label="目录">
+    <h2>目录</h2>
+    <ol>
+      <li><a href="#s1">开发者信息</a></li>
+      <li><a href="#s2">我们收集哪些信息</a></li>
+      <li><a href="#s3">权限使用说明</a></li>
+      <li><a href="#s4">本地数据存储</a></li>
+      <li><a href="#s5">第三方 SDK 与共享</a></li>
+      <li><a href="#s6">未成年人保护</a></li>
+      <li><a href="#s7">您的权利</a></li>
+      <li><a href="#s8">信息安全</a></li>
+      <li><a href="#s9">政策更新</a></li>
+      <li><a href="#s10">联系我们</a></li>
+    </ol>
+  </nav>
+
+  <article>
+
+    <section id="s1">
+      <h2><span class="num">01</span>一、开发者信息</h2>
+      <p>本游戏《灰区撤离》（以下简称「本游戏」）由 <strong>无声之境的工作室</strong>（以下简称「我们」）开发并运营。</p>
+      <ul>
+        <li>游戏名称：灰区撤离</li>
+        <li>应用包名：<code>com.codex.grayzone.optimized</code></li>
+        <li>开发者：无声之境的工作室</li>
+        <li>联系邮箱：<a href="mailto:18537752141@163.com">18537752141@163.com</a></li>
+        <li>联系电话：<a href="tel:185377752141">185377752141</a></li>
+      </ul>
+      <p>如您对本政策有任何疑问，可通过上述方式联系我们。</p>
+    </section>
+
+    <section id="s2">
+      <h2><span class="num">02</span>二、我们收集哪些信息</h2>
+      <div class="callout">我们不收集您的任何个人信息。</div>
+      <p>本游戏为完全离线的单机游戏，在运行过程中：</p>
+      <ul>
+        <li>不收集您的姓名、手机号、身份证号、邮箱等身份信息；</li>
+        <li>不收集您的设备信息（IMEI、MAC 地址、Android ID、OAID 等）；</li>
+        <li>不收集您的位置信息；</li>
+        <li>不读取您的通讯录、短信、相册、摄像头、麦克风；</li>
+        <li>不收集您的游戏行为数据用于分析、画像或推送。</li>
+      </ul>
+      <p>因本游戏未申请网络访问权限（<code>android.permission.INTERNET</code>），<strong>技术上不具备向任何服务器传输数据的能力</strong>。</p>
+    </section>
+
+    <section id="s3">
+      <h2><span class="num">03</span>三、权限使用说明</h2>
+      <p>本游戏仅申请以下一项系统权限：</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>权限</th><th>用途</th><th>是否涉及隐私</th></tr></thead>
+          <tbody>
+            <tr><td><code>android.permission.VIBRATE</code></td><td>游戏内震动反馈效果</td><td>否，不涉及任何个人信息</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>除此之外，本游戏<strong>未申请</strong>网络访问、设备识别、定位、通讯录、短信、摄像头、麦克风、存储读写等任何其他权限。</p>
+    </section>
+
+    <section id="s4">
+      <h2><span class="num">04</span>四、本地数据存储</h2>
+      <p>本游戏在您的设备本地保存以下数据，用于记录游戏进度：</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>数据</th><th>存储方式</th><th>用途</th></tr></thead>
+          <tbody>
+            <tr><td>游戏存档（等级、装备、地图进度、设置项）</td><td>浏览器本地存储（<code>localStorage</code>）</td><td>下次启动时恢复游戏进度</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>上述数据：</p>
+      <ul>
+        <li><strong>仅保存在您的设备本地</strong>，不会上传至任何服务器；</li>
+        <li>我们不读取、不分析、不共享这些数据；</li>
+        <li>您可通过清除应用数据或卸载应用<strong>完全删除</strong>这些数据。</li>
+      </ul>
+    </section>
+
+    <section id="s5">
+      <h2><span class="num">05</span>五、第三方 SDK 与共享</h2>
+      <p>本游戏<strong>未接入任何第三方 SDK</strong>，包括但不限于：</p>
+      <ul>
+        <li>统计分析 SDK（如友盟、TalkingData、神策）</li>
+        <li>广告 SDK（如穿山甲、优量汇）</li>
+        <li>推送 SDK</li>
+        <li>登录/支付 SDK</li>
+        <li>崩溃上报 SDK</li>
+      </ul>
+      <p>因此我们<strong>不会向任何第三方共享、转让或公开披露</strong>您的任何信息。</p>
+    </section>
+
+    <section id="s6">
+      <h2><span class="num">06</span>六、未成年人保护</h2>
+      <p>本游戏不收集任何个人信息，也不具备联网与付费功能，不存在诱导未成年人消费的情形。</p>
+      <p>我们建议未成年人在监护人指导下使用本游戏，并注意合理安排游戏时间。</p>
+    </section>
+
+    <section id="s7">
+      <h2><span class="num">07</span>七、您的权利</h2>
+      <p>由于我们不收集您的个人信息，您无需行使查询、更正、删除个人信息的权利。</p>
+      <p>如您希望清除本地游戏数据，可通过以下任一方式：</p>
+      <ol>
+        <li>在设备「设置 → 应用 → 灰区撤离 → 存储」中清除数据；</li>
+        <li>卸载本游戏。</li>
+      </ol>
+    </section>
+
+    <section id="s8">
+      <h2><span class="num">08</span>八、信息安全</h2>
+      <p>本游戏不含服务器端数据存储，不存在数据泄露、被窃取的风险。本地存档数据受您设备自身的安全机制保护。</p>
+    </section>
+
+    <section id="s9">
+      <h2><span class="num">09</span>九、政策更新</h2>
+      <p>如本政策发生变更，我们将在游戏更新说明及本页面同步更新，并在显著位置提示。若变更涉及个人信息处理方式的实质性变化，我们将重新征得您的同意。</p>
+    </section>
+
+    <section id="s10">
+      <h2><span class="num">10</span>十、联系我们</h2>
+      <div class="contact">
+        <span><span class="k">开发者</span>无声之境的工作室</span>
+        <a href="mailto:18537752141@163.com"><span class="k">邮箱</span>18537752141@163.com</a>
+        <a href="tel:185377752141"><span class="k">电话</span>185377752141</a>
+      </div>
+      <p>我们将在收到您的问题后 15 个工作日内予以回复。</p>
+    </section>
+
+  </article>
+
+  <footer class="page">
+    《灰区撤离》隐私政策<span class="sep">·</span>无声之境的工作室<br>
+    生效日期 2026 年 11 月 4 日<span class="sep">·</span>本页面无需登录即可访问
+  </footer>
+
+</div>
+</body>
+</html>
